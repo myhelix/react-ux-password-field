@@ -158,7 +158,7 @@ var InputPassword = React.createClass({
 
   handleZxcvbn(val) {
 
-    if (typeof zxcvbn === 'undefined' && typeof window.zxcvbn === 'undefined') {
+    if (typeof zxcvbn === 'undefined' && typeof window === 'undefined' && typeof window.zxcvbn === 'undefined') {
       return;
     }
 
